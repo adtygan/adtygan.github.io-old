@@ -1,4 +1,4 @@
-baseURL = 'https://adtygan.github.io/adtygan.github.io'
+baseURL = 'https://adtygan.github.io/adtygan.github.io/'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
 theme = "PaperMod"
