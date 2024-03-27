@@ -1,4 +1,43 @@
 baseURL = 'https://adtygan.github.io/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'aditya'
 theme = "PaperMod"
+enableEmoji = true
+
+[params]
+author = "David Hwang"
+ShowReadingTime = true
+ShowShareButtons = true
+
+  [params.homeInfoParams]
+  Title = "Aditya Ganesh Kumar"
+  Content = """
+Welcome to the **my homepage** 🎉
+- This is a space where I will be blogging on AI
+"""
+
+  [[params.socialIcons]]
+  name = "Github"
+  url = "https://github.com/adtygan"
+
+  [[params.socialIcons]]
+  name = "Rss"
+  url = "index.xml"
+
+[[menu.main]]
+identifier = "categories"
+name = "Categories"
+url = "/categories/"
+weight = 10
+
+[[menu.main]]
+identifier = "tags"
+name = "Tags"
+url = "/tags/"
+weight = 20
+
+[[menu.main]]
+identifier = "archives"
+name = "Archives"
+url = "/archives/"
+weight = 30
