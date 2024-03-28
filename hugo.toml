@@ -1,43 +1,85 @@
 baseURL = 'https://adtygan.github.io/'
 languageCode = 'en-us'
-title = 'aditya'
+title = 'Aditya Ganesh Kumar'
 theme = "PaperMod"
 enableEmoji = true
+paginate = 5
 
 [params]
-author = "David Hwang"
+author = "Aditya Ganesh Kumar"
+title = "Aditya Ganesh Kumar"
+description = "Aditya's homepage and blog"
+
+defaultTheme = "auto"
+disableThemeToggle = false
+
 ShowReadingTime = true
 ShowShareButtons = true
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = true
+ShowWordCount = true
+ShowRssButtonInSectionTermList = true
+UseHugoToc = true
+disableSpecial1stPost = false
+disableScrollToTop = false
+comments = true
+hidemeta = false
+hideSummary = false
+showtoc = true
+tocopen = false
 
-  [params.homeInfoParams]
-  Title = "Aditya Ganesh Kumar"
+
+[params.homeInfoParams]
+  Title = "Greetings 👋🏻"
   Content = """
-Welcome to the **my homepage** 🎉
-- This is a space where I will be blogging on AI
+- I'm Aditya, an AI practitioner and tinkerer. I recently graduated 
+  from the National University of Singapore where I was advised by 
+  [Prof. Lee Wee Sun](https://www.comp.nus.edu.sg/~leews/), and worked
+ on improving text-to-image retrieval systems for product matching.
+
+ - I'm deeply passionate about **Human Centered AI** and believe in an exciting future
+ where AI increasingly augments human creativity. I'll be using this space to document
+ the interesting projects I cook up.
 """
 
-  [[params.socialIcons]]
-  name = "Github"
-  url = "https://github.com/adtygan"
+[[params.socialIcons]]
+name = "Github"
+url = "https://github.com/adtygan"
+weight = 1
 
-  [[params.socialIcons]]
-  name = "Rss"
-  url = "index.xml"
+
+[[params.socialIcons]]
+name = "Twitter"
+url = "https://twitter.com/adtygan"
+weoight = 2
+
+[[params.socialIcons]]
+name = "LinkedIn"
+url = "https://www.linkedin.com/in/adityaganeshkumar/"
+weight = 3
+
+[[params.socialIcons]]
+name = "Rss"
+url = "index.xml"
+weight = 4
 
 [[menu.main]]
-identifier = "categories"
-name = "Categories"
-url = "/categories/"
+identifier = "posts"
+name = "Posts"
+url = "/posts/"
 weight = 10
 
 [[menu.main]]
-identifier = "tags"
-name = "Tags"
-url = "/tags/"
+identifier = "cv"
+name = "CV"
+url = "https://drive.google.com/file/d/1FeJgCIoOV-KO3stURiFWa9K8RVYpLed3/view?usp=sharing"
 weight = 20
 
-[[menu.main]]
-identifier = "archives"
-name = "Archives"
-url = "/archives/"
-weight = 30
+[markup]
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    lineNos = true
+    style = "gruvbox"
+
