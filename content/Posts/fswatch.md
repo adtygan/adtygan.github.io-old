@@ -12,7 +12,7 @@ As someone with a new found interest in automating things, I have been working o
 ## Enter `fswatch`
 This is where [`fswatch`](https://github.com/emcrisostomo/fswatch) comes in clutch. It's a tool that allows monitoring a folder for changes. And in this post, I want to cover a general recipe that allows for detecting file additions and deletions in a folder. 
 
-Let's call the script `file-monitor.sh`. It monitors the folder path `~/Vault` and tracks files with extensions `.jpg`, `.jpeg` and `.png`. Below is its code:
+Let's call the script `file-monitor.sh`. It monitors the folder path `~/Vault` and tracks files with extensions `.jpg`, `.jpeg` and `.png`. Below is the code:
 
 ```bash
 FOLDER=~/Vault
@@ -51,6 +51,4 @@ Added: /Users/aditya/Vault/Orange Boat Illustration.jpg
 ```
 
 As you can see, the script handles renaming as a combination of deletion and addition.
-
-##
 

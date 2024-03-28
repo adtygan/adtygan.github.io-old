@@ -139,7 +139,6 @@ Context As someone with a new found interest in automating things, I have been w
   <ul>
     <li><a href="#context">Context</a></li>
     <li><a href="#enter-fswatch">Enter <code>fswatch</code></a></li>
-    <li><a href="#heading"></a></li>
   </ul>
 </nav>
         </div>
@@ -153,7 +152,7 @@ Context As someone with a new found interest in automating things, I have been w
 <p>As someone with a new found interest in automating things, I have been working on building a local image search engine called <strong>WarpSearch</strong>. It will allow me to query locally stored images using text and this is amazing because I can dump all my images in one folder and be very hopeful that I will be able to find it later. But folders don&rsquo;t remain the same. Images get added or deleted and I need to keep track of these changes.</p>
 <h2 id="enter-fswatch">Enter <code>fswatch</code><a hidden class="anchor" aria-hidden="true" href="#enter-fswatch">#</a></h2>
 <p>This is where <a href="https://github.com/emcrisostomo/fswatch"><code>fswatch</code></a> comes in clutch. It&rsquo;s a tool that allows monitoring a folder for changes. And in this post, I want to cover a general recipe that allows for detecting file additions and deletions in a folder.</p>
-<p>Let&rsquo;s call the script <code>file-monitor.sh</code>. It monitors the folder path <code>~/Vault</code> and tracks files with extensions <code>.jpg</code>, <code>.jpeg</code> and <code>.png</code>. Below is its code:</p>
+<p>Let&rsquo;s call the script <code>file-monitor.sh</code>. It monitors the folder path <code>~/Vault</code> and tracks files with extensions <code>.jpg</code>, <code>.jpeg</code> and <code>.png</code>. Below is the code:</p>
 <div class="highlight"><div style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 1
@@ -224,7 +223,6 @@ Context As someone with a new found interest in automating things, I have been w
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>As you can see, the script handles renaming as a combination of deletion and addition.</p>
-<h2 id="heading"><a hidden class="anchor" aria-hidden="true" href="#heading">#</a></h2>
 
 
   </div>
