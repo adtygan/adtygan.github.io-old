@@ -41,7 +41,7 @@ fswatch -0 -o $FOLDER | while read -d "" event; do
 done
 ```
 
-At a high level, the code works by comparing the current state of the folder with its previous state. This allows it to detect file additions and deletions. After starting the script with `bash file-monitor.sh`, I added 2 images and renamed 1 exising image. Here is the output it produces:
+The code works by comparing the current state of the folder with its previous state. This allows it to detect file additions and deletions. After starting the script with `bash file-monitor.sh`, I added 2 images and renamed 1 exising image. Here is the output it produces:
 
 ```shell
 Added: /Users/aditya/Vault/Orange Boat.jpg
@@ -50,5 +50,23 @@ Deleted: /Users/aditya/Vault/Orange Boat.jpg
 Added: /Users/aditya/Vault/Orange Boat Illustration.jpg
 ```
 
-As you can see, the script handles renaming as a combination of deletion and addition.
+As you can see, the script handles renaming as a combination of deletion and addition. This is a limitation of the chosen approach. A fix that I haven't explored involves the following: When a `Deletion + Addition` pair is detected, check if the file count remains same before and after the pair of operations. If so, it is  a `Rename` operation.
+
+## Running as Background Process
+
+In most cases, we want the script to run in the background, even after we have closed the terminal. To do this, we first give the script permission to execute as a program. 
+
+```shell
+chmod +x ./file-monitor.sh       
+```
+
+Then, we use `nohup` to run the process in detached mode and store the outputs in a separate log file.
+
+```shell
+nohup ./file-monitor.sh > fswatch.log
+```
+
+## Closing Thoughts
+
+That wraps it up for my first mini-blog. I hope this post encourages you to check out `fswatch` and try out this recipe for your own use cases. If you have any questions or suggestions, please reach out to me [on Twitter](https://twitter.com/adtygan).
 
