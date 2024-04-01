@@ -1,6 +1,6 @@
 +++
 title = 'Never Miss a New File with fswatch'
-date = '2024-03-28'
+date = '2024-04-01'
 draft = false
 +++
 
