@@ -10,6 +10,14 @@
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Never Miss a New File with fswatch</title>
+      <link>http://localhost:1313/posts/fswatch-copy/</link>
+      <pubDate>Thu, 28 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/fswatch-copy/</guid>
+      <description>🔥 This is my first blog post • LETS GO!
+Context As someone with a new found interest in automating things, I have been working on building a local image search engine called WarpSearch. It will allow me to query locally stored images using text and this is amazing because I can dump all my images in one folder and be very hopeful that I will be able to find it later.</description>
+    </item>
+    <item>
+      <title>Never Miss a New File with fswatch</title>
       <link>http://localhost:1313/posts/fswatch/</link>
       <pubDate>Thu, 28 Mar 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/fswatch/</guid>
