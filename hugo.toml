@@ -2,6 +2,7 @@ baseURL = 'https://adtygan.github.io/'
 languageCode = 'en-us'
 title = 'Aditya Ganesh Kumar'
 paginate = 5
+paginatePath = 'posts'
 theme = "PaperMod"
 enableEmoji = true
 
