@@ -2,17 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:64580/</loc>
+    <loc>http://localhost:65326/</loc>
     <lastmod>2024-04-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:64580/posts/fswatch/</loc>
+    <loc>http://localhost:65326/posts/fswatch/</loc>
     <lastmod>2024-04-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:64580/posts/</loc>
+    <loc>http://localhost:65326/posts/</loc>
     <lastmod>2024-04-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:64580/categories/</loc>
+    <loc>http://localhost:65326/categories/</loc>
   </url><url>
-    <loc>http://localhost:64580/tags/</loc>
+    <loc>http://localhost:65326/tags/</loc>
   </url>
 </urlset>
