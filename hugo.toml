@@ -9,7 +9,7 @@ enableEmoji = true
 [params]
 author = "Aditya Ganesh Kumar"
 title = "Aditya Ganesh Kumar"
-description = "Aditya's homepage and blog"
+description = "Aditya's homepage and personal blog"
 
 defaultTheme = "auto"
 disableThemeToggle = false
